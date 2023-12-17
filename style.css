@@ -1,0 +1,136 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+#nav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 2rem;
+}
+
+#nav-right {
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    align-items: center;
+}
+
+#highlight {
+    color: var(--Orange, #FF7D1A);
+    font-family: Kumbh Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.68px;
+    text-transform: uppercase;
+}
+
+#name {
+    color: var(--Very-dark-blue, #1D2025);
+    font-family: Kumbh Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    /* 114.286% */
+}
+
+p {
+    color: var(--Grayish-blue, #68707D);
+    font-family: Kumbh Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px;
+    /* 178.571% */
+    letter-spacing: 0.56px;
+}
+
+#price small {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+#old-price {
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.48px;
+}
+
+.buy{
+    margin-top: 4rem;
+}
+
+.buy button{
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+.buy img {
+    width: 24px;
+    height: 24px;
+}
+@media (max-width: 660px) {
+    nav {
+        padding-bottom: 0;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    #menu {
+        display: block;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav {
+        padding: 2rem 4rem;
+    }
+
+    #nav-left {
+        column-gap: 4rem;
+    }
+
+    #nav-right {
+        column-gap: 4rem;
+    }
+    .img-boot {
+        float: left;
+        margin-right: 2rem;
+    }
+    
+    .text-boot {
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 1280px) {
+    nav {
+        padding: 2rem 10rem;
+    }
+
+    #nav-left {
+        column-gap: 6rem;
+    }
+
+    #nav-right {
+        column-gap: 6rem;
+    }
+    .img-boot {
+        float: left;
+        margin-right: 2rem;
+    }
+    
+    .text-boot {
+        overflow: hidden;
+    }
+}
